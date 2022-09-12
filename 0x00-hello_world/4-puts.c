@@ -1,11 +1,13 @@
 #!/bin/bash
 #include <stdio.h>
-/*
- *main - Printing out
- Return: Always 0 (Successful)
-*/
+
+/**
+ * main - Print
+ *
+ * Return: Always 0 (Is a success)
+ */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
-}  
+	return (0); 
+}
