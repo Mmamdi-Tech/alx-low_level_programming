@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - func
+ * print_alphabet_x10 - func to ptint out abc 10x
  *
- * Return - 0
+ * Return: Always 0 (Is a Success).
  */
 void print_alphabet_x10(void)
 {
