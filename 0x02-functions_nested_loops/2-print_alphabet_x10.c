@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 
+ * print_alphabet_x10 - func 
  *
- * Return - 0 (Is a Success)
+ * Return - 0 
  */
 
 void print_alphabet_x10(void)
