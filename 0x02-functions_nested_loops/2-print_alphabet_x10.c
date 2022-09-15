@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10
+ * print_alphabet_x10 
  *
- * Return: Always 0 (Is a Success)
+ * Return - 0 (Is a Success)
  */
+
 void print_alphabet_x10(void)
 {
 	int b = 0;
