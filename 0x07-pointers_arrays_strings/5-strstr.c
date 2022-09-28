@@ -2,20 +2,37 @@
 
 /**
  * _strstr - locates a substring.
- * @haystack: input string.
- * @needle: substring to be matched.
- * Return: pointer to object.
+ * @haystack: The string to be searched.
+ * @needle: The substring to be located.
+ *
+ * Return: If the substring is located - a pointer to the beginning
+ * of the located substring.
+ * If the substring is not located - NULL.
  */
 char *_strstr(char *haystack, char *needle)
 {
-	char *p_i;
-	char *p_ss = needle;
+	int index;
 
-	for (; *haystack != '\0'; haystack++)
+	if (*needle == 0)
+		return (haystack);
+
+	while (*haystack)
 	{
-		for (p_i = haystack, p_ss = needle; *p_ss == *p_i && *p_ss; p_ss++, p_i++);
-		if (*p_ss == '\0')
-			return (haystack);
+		index = 0;
+
+		if (haystack[index] == needle[index])
+		{
+			do {
+				if (needle[index + 1] == '\0')
+					return (haystack);
+
+				index++;
+
+			} while (haystack[index] == needle[index]);
+		}
+
+		haystack++;
 	}
-	return (NULL);
+
+	return ('\0');
 }
