@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -34,6 +33,11 @@ int main(int argc, char *argv[])
 		if ((cents - 10) >= 0)
 		{
 			cents -= 10;
+			continue;
+		}
+		if ((cents - 5) >= 0)
+		{
+			cents -= 5;
 			continue;
 		}
 		if ((cents - 2) >= 0)
