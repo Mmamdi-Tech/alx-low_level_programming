@@ -1,12 +1,13 @@
 #include "main.h"
-#include <stdlib>
+#include <stdlib.h>
 
 /**
  * set_bit - sets the value of a bit to 1 at a given index
  * @n: parameter
  * @index: index
- * Return: value
+ * Return: 1 if sucess, -1 if error
  */
+
 int set_bit(unsigned long int *n, unsigned int index)
 {
 	if (index > sizeof(n) * 8)
