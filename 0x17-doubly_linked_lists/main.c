@@ -1,12 +1,12 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#include "lists."
+#include "lists.h"
 
 /**
  * main - check the code
  *
- * Return: Always Exit_Success.
+ * Return: Always EXIT_SUCCESS.
  */
 int main(void)
 {
@@ -28,7 +28,7 @@ int main(void)
 	new->prev = NULL;
 	head = new;
 	n = print_dlistint(head);
-	printf("-> %lu elements\n", n)
+	printf("-> %lu elements\n", n);
 	free(new);
 	return (EXIT_SUCCESS);
 }
